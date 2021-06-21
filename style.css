@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Zen Dots, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #474649;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.31'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.game-container {
+  width: 630px;
+  height: 600px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px -5px rgba(0,0,0, 0.5);
+}
+
+
+.header {
+  background: rgb(39, 38, 38);
+  border-radius: 5px 5px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+h1 {
+  color: white;
+  font-size: 25px;
+}
+
+.player-container {
+  margin: 50px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.far {
+  font-size: 50px;
+  margin-right: 40px;
+  User-select: none;
+}
+
+#player .far,
+#player .choice {
+  color:rgb(48, 121, 167);
+  cursor: pointer;
+}
+
+#computer .far,
+#computer .choice {
+  color: rgb(226, 106, 106);
+}
+
+.selected {
+  color: black !important;
+}
+.reset-icon {
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-text {
+  font-size: 40px;
+  margin: unset;
+  margin-top: 20px;
+}
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+  .game-container {
+    width: 95%;
+    height: 580px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .player-container {
+    margin: 50px 0 25px 25px;
+  }
+
+  .far {
+    margin-right: 20px;
+  }
+
+  .reset-icon {
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+  .game-container {
+    height: 550px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .player-container {
+    margin: 43px 0 25px 20px;
+  }
+
+  .far {
+    font-size: 43px;
+  }
+
+  .reset-icon {
+    margin-top: 15px;
+  }
+
+  .result-container {
+    margin: 0 20px;
+  }
+}
